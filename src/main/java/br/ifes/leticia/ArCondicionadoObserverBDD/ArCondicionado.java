@@ -59,5 +59,7 @@ public class ArCondicionado implements Observer{
         }
     }
 	
-    
+    public void media_temp_externa(int temp1, int temp2, int temp3){
+    	this.tempExterna = (int) Math.round((temp1 + temp2 + temp3)/3);
+    }
 }
