@@ -42,7 +42,7 @@ public class ArConcionadoSteps {
 
 	@Then("^O ar condicionado calcula e normaliza a temperatura$")
 	public void o_ar_condicionado_calcula_e_normaliza_a_temperatura() throws Throwable {
-		assertEquals(25, arCondicionado.TEMP_TO_ALERT);
+		assertEquals(28, arCondicionado.TEMP_TO_ALERT);
 	}
 	
 	

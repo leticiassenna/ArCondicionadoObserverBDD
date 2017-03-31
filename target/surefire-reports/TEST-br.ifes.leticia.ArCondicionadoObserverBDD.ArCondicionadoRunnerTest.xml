@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="18" failures="0" name="br.ifes.leticia.ArCondicionadoObserverBDD.ArCondicionadoRunnerTest" time="0.007" errors="0" skipped="0">
+<testsuite tests="18" failures="6" name="br.ifes.leticia.ArCondicionadoObserverBDD.ArCondicionadoRunnerTest" time="0.013" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_77\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 8.1"/>
-    <property name="classworlds.conf" value="C:\Users\Leticia Senna\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf381446524565029360.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Leticia Senna\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5858353741809605555.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_77\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_77/jre/bin/server;C:/Program Files/Java/jdk1.8.0_77/jre/bin;C:/Program Files/Java/jdk1.8.0_77/jre/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\apache-maven-3.3.9\bin;C:\Program Files\Java\jdk1.8.0_77\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Leticia Senna\Desktop;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,22 +61,82 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="| 3 | 5 | 7 | 26 | 28 | 30 | 5 | 28 |" name="Given Eu quero controlar a temperatura interna da sala" time="0.004"/>
+  <testcase classname="| 3 | 5 | 7 | 26 | 28 | 30 | 5 | 28 |" name="Given Eu quero controlar a temperatura interna da sala" time="0.002"/>
   <testcase classname="| 3 | 5 | 7 | 26 | 28 | 30 | 5 | 28 |" name="When Os sensores identificam a quantidade de pessoas na sala \&quot;3\&quot;\u002C \&quot;5\&quot;\u002C \&quot;7\&quot;" time="0"/>
   <testcase classname="| 3 | 5 | 7 | 26 | 28 | 30 | 5 | 28 |" name="And Recebo os valores dos sensores externos \&quot;26\&quot;\u002C \&quot;28\&quot;\u002C \&quot;30\&quot;" time="0"/>
   <testcase classname="| 3 | 5 | 7 | 26 | 28 | 30 | 5 | 28 |" name="Then Calcula a media de pessoas \&quot;5\&quot; na sala e a media da temperatura externa \&quot;28\&quot;" time="0"/>
-  <testcase classname="| 3 | 5 | 7 | 26 | 28 | 30 | 5 | 28 |" name="And O ar condicionado calcula e normaliza a temperatura" time="0"/>
-  <testcase classname="| 3 | 5 | 7 | 26 | 28 | 30 | 5 | 28 |" name="| 3 | 5 | 7 | 26 | 28 | 30 | 5 | 28 |" time="0.001"/>
+  <testcase classname="| 3 | 5 | 7 | 26 | 28 | 30 | 5 | 28 |" name="And O ar condicionado calcula e normaliza a temperatura" time="0.004">
+    <failure message="expected:&lt;28&gt; but was:&lt;25&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;28&gt; but was:&lt;25&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at br.ifes.leticia.ArCondicionadoObserverBDD.ArConcionadoSteps.o_ar_condicionado_calcula_e_normaliza_a_temperatura(ArConcionadoSteps.java:45)
+	at ✽.And O ar condicionado calcula e normaliza a temperatura(ArCondicionadoObserver.feature:8)
+</failure>
+  </testcase>
+  <testcase classname="| 3 | 5 | 7 | 26 | 28 | 30 | 5 | 28 |" name="| 3 | 5 | 7 | 26 | 28 | 30 | 5 | 28 |" time="0.005">
+    <failure message="expected:&lt;28&gt; but was:&lt;25&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;28&gt; but was:&lt;25&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at br.ifes.leticia.ArCondicionadoObserverBDD.ArConcionadoSteps.o_ar_condicionado_calcula_e_normaliza_a_temperatura(ArConcionadoSteps.java:45)
+	at ✽.And O ar condicionado calcula e normaliza a temperatura(ArCondicionadoObserver.feature:8)
+</failure>
+  </testcase>
   <testcase classname="| 4 | 6 | 5 | 27 | 26 | 31 | 5 | 28 |" name="Given Eu quero controlar a temperatura interna da sala" time="0"/>
   <testcase classname="| 4 | 6 | 5 | 27 | 26 | 31 | 5 | 28 |" name="When Os sensores identificam a quantidade de pessoas na sala \&quot;4\&quot;\u002C \&quot;6\&quot;\u002C \&quot;5\&quot;" time="0"/>
   <testcase classname="| 4 | 6 | 5 | 27 | 26 | 31 | 5 | 28 |" name="And Recebo os valores dos sensores externos \&quot;27\&quot;\u002C \&quot;26\&quot;\u002C \&quot;31\&quot;" time="0"/>
-  <testcase classname="| 4 | 6 | 5 | 27 | 26 | 31 | 5 | 28 |" name="Then Calcula a media de pessoas \&quot;5\&quot; na sala e a media da temperatura externa \&quot;28\&quot;" time="0.001"/>
-  <testcase classname="| 4 | 6 | 5 | 27 | 26 | 31 | 5 | 28 |" name="And O ar condicionado calcula e normaliza a temperatura" time="0"/>
-  <testcase classname="| 4 | 6 | 5 | 27 | 26 | 31 | 5 | 28 |" name="| 4 | 6 | 5 | 27 | 26 | 31 | 5 | 28 |" time="0"/>
+  <testcase classname="| 4 | 6 | 5 | 27 | 26 | 31 | 5 | 28 |" name="Then Calcula a media de pessoas \&quot;5\&quot; na sala e a media da temperatura externa \&quot;28\&quot;" time="0"/>
+  <testcase classname="| 4 | 6 | 5 | 27 | 26 | 31 | 5 | 28 |" name="And O ar condicionado calcula e normaliza a temperatura" time="0.001">
+    <failure message="expected:&lt;28&gt; but was:&lt;25&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;28&gt; but was:&lt;25&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at br.ifes.leticia.ArCondicionadoObserverBDD.ArConcionadoSteps.o_ar_condicionado_calcula_e_normaliza_a_temperatura(ArConcionadoSteps.java:45)
+	at ✽.And O ar condicionado calcula e normaliza a temperatura(ArCondicionadoObserver.feature:8)
+</failure>
+  </testcase>
+  <testcase classname="| 4 | 6 | 5 | 27 | 26 | 31 | 5 | 28 |" name="| 4 | 6 | 5 | 27 | 26 | 31 | 5 | 28 |" time="0.001">
+    <failure message="expected:&lt;28&gt; but was:&lt;25&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;28&gt; but was:&lt;25&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at br.ifes.leticia.ArCondicionadoObserverBDD.ArConcionadoSteps.o_ar_condicionado_calcula_e_normaliza_a_temperatura(ArConcionadoSteps.java:45)
+	at ✽.And O ar condicionado calcula e normaliza a temperatura(ArCondicionadoObserver.feature:8)
+</failure>
+  </testcase>
   <testcase classname="| 0 | 1 | 2 | 5 | 3 | 7 | 1 | 5 |" name="Given Eu quero controlar a temperatura interna da sala" time="0"/>
   <testcase classname="| 0 | 1 | 2 | 5 | 3 | 7 | 1 | 5 |" name="When Os sensores identificam a quantidade de pessoas na sala \&quot;0\&quot;\u002C \&quot;1\&quot;\u002C \&quot;2\&quot;" time="0"/>
-  <testcase classname="| 0 | 1 | 2 | 5 | 3 | 7 | 1 | 5 |" name="And Recebo os valores dos sensores externos \&quot;5\&quot;\u002C \&quot;3\&quot;\u002C \&quot;7\&quot;" time="0.001"/>
+  <testcase classname="| 0 | 1 | 2 | 5 | 3 | 7 | 1 | 5 |" name="And Recebo os valores dos sensores externos \&quot;5\&quot;\u002C \&quot;3\&quot;\u002C \&quot;7\&quot;" time="0"/>
   <testcase classname="| 0 | 1 | 2 | 5 | 3 | 7 | 1 | 5 |" name="Then Calcula a media de pessoas \&quot;1\&quot; na sala e a media da temperatura externa \&quot;5\&quot;" time="0"/>
-  <testcase classname="| 0 | 1 | 2 | 5 | 3 | 7 | 1 | 5 |" name="And O ar condicionado calcula e normaliza a temperatura" time="0"/>
-  <testcase classname="| 0 | 1 | 2 | 5 | 3 | 7 | 1 | 5 |" name="| 0 | 1 | 2 | 5 | 3 | 7 | 1 | 5 |" time="0"/>
+  <testcase classname="| 0 | 1 | 2 | 5 | 3 | 7 | 1 | 5 |" name="And O ar condicionado calcula e normaliza a temperatura" time="0">
+    <failure message="expected:&lt;28&gt; but was:&lt;25&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;28&gt; but was:&lt;25&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at br.ifes.leticia.ArCondicionadoObserverBDD.ArConcionadoSteps.o_ar_condicionado_calcula_e_normaliza_a_temperatura(ArConcionadoSteps.java:45)
+	at ✽.And O ar condicionado calcula e normaliza a temperatura(ArCondicionadoObserver.feature:8)
+</failure>
+  </testcase>
+  <testcase classname="| 0 | 1 | 2 | 5 | 3 | 7 | 1 | 5 |" name="| 0 | 1 | 2 | 5 | 3 | 7 | 1 | 5 |" time="0">
+    <failure message="expected:&lt;28&gt; but was:&lt;25&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;28&gt; but was:&lt;25&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at br.ifes.leticia.ArCondicionadoObserverBDD.ArConcionadoSteps.o_ar_condicionado_calcula_e_normaliza_a_temperatura(ArConcionadoSteps.java:45)
+	at ✽.And O ar condicionado calcula e normaliza a temperatura(ArCondicionadoObserver.feature:8)
+</failure>
+  </testcase>
 </testsuite>
